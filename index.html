@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Support technique HP</title>
+  <link href="style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header>
+      <h1>OUPS!</h1>
+      <h2>Apparemment il y a un STUÛT...</h2>
+    </header>
+
+    <form action="" method="POST">
+
+    <fieldset class="contact">
+      <h2>Don't Worry^^</h2>
+      <h3>Notre Super Support est là</h3>
+      <fieldset class="infos">
+          <legend><h2>Complétez ces quelques infos pour commencer</h2></legend>
+        <div class="nom">
+          <label for="nom">Nom :</label><br />
+          <input type="text" id="nom" name="user_nom" value="nom" placeholder="Votre Nom">
+        </div>
+        <div class="prenom">
+          <label for="nom">Prénom :</label><br />
+          <input type="text" id="prenom" name="user_prenom" value="prenom" placeholder="Votre Prénom">
+        </div>
+        <div class="mail">
+          <label for="nom">E-mail :</label><br />
+          <input type="mail" id="mail" name="user_mail" value="mail" placeholder="Votre adresse mail">
+        </div>
+        <div class="genre">
+          <p>Genre</p>
+          <ul>
+            <li>
+              <label for="genreF">
+              <input type="radio" id="genreF" name="genre" value="F">
+              F</label>
+            </li>
+            <li>
+              <label for="genreM">
+              <input type="radio" id="genreM" name="genre" value="M">
+              M</label>
+            </li>
+            <li>
+              <label for="genreX">
+              <input type="radio" id="genreX" name="genre" value="X">
+              X</label>
+            </li>
+          </ul>
+        </div>
+        <div class="pays">
+          <label for="pays">Pays :
+          </label>
+          <select id="pays" name="pays">
+            <option value="Bel">Belgique</option>
+            <option value="Fra">France</option>
+            <option value="Ned">Pays-Bas</option>
+         </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="stuut">
+        <legend><h2>Et ensuite...dites-nous quel est le stuût*?</h2></legend>
+        <div class="problem">
+          <ul>
+            <li>
+              <label for="livr">
+              <input type="checkbox" id="livr" name="problem" value="livraison">
+              C'est ma livraison...</label>
+            </li>
+            <li>
+              <label for="commande">
+              <input type="checkbox" id="commande" name="problem" value="commande">
+              C'est ma commande...</label>
+            </li>
+            <li>
+              <label for="produit">
+              <input type="checkbox" id="produit" name="problem" value="produit">
+              C'est le produit...</label>
+            </li>
+            <li>
+              <label for="autre">
+              <input type="checkbox" id="autre" name="problem" value="autre">
+              Ben...autre chose!</label>
+            </li>
+          </ul>
+        </div>
+        <div class="message">
+          <label for="mess">Message :
+          </label> <br />
+          <textarea id="mess" placeholder="Décrivez-nous ici votre problème" rows="10" cols="50"></textarea>
+        </div>
+        <p>*stuût= problème</p>
+
+      </fieldset >
+
+       <div class="submit">
+         <button type="submit">Et par ici la Solution!</button>
+       </div>
+
+    </fieldset>
+
+    </form>
+
+    <footer>
+
+    </footer>
+
+  </div>
+</body>
+</html>

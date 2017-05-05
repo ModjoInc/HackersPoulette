@@ -20,10 +20,12 @@
     font-style: normal;
 
 }
+
 header {
   text-align: center;
-  color: #fff;
-  margin-bottom: 50px;
+  color: DarkSlateGray;
+  background-color: #fff;
+  background-size: cover;
 }
 
 .subheader {
@@ -32,24 +34,28 @@ header {
 
 body {
   font-family: 'bellotaregular', cursive;
-  width: 80%;
+
+}
+section {
   margin: auto;
-  background-color: #15c5bd;
+  padding: 5px 50px 5px 60px;
 }
 
 figure {
   text-align: center;
 }
 
-.fichier {
-  margin: 50px 0px 50px 0px;
+fieldset {
+  background-color: #15c5bd;
 }
-
-.fichier label {
-  font-size: 1.5em;
+.well {
+  background-color: #15c5bd;
 }
 .submit {
   margin: 50px 0px 50px 0px;
+}
+#success_message {
+  display: none;
 }
 
 .FormCheck {
@@ -59,8 +65,12 @@ figure {
   margin: 50px 0px 50px 0px;
 }
 
+h1 {
+  text-transform: capitalize;
+}
 h2 {
   text-align: center;
+  text-transform: capitalize;
 }
 
 figure img {
@@ -68,6 +78,7 @@ figure img {
   height: auto;
 }
 footer {
-  margin-top: 50px;
+  margin-top: 5px;
   background-color: #fff;
+  /*background-size: cover;*/
 }

@@ -19,6 +19,20 @@
     <section>
       <h1>Données du formulaire</h1>
       <p><?php
+      $user_nom = $_POST['user_nom'];
+      $user_prenom = $_POST['user_prenom'];
+      $mail = $_POST["user_mail"];
+      $genre = $_POST["optionGenre"];
+      $pays = $_POST["pays"];
+      $problem = $_POST["problem"];
+      $mess = $_POST["message"];
+
+      if (empty($user_nom) || empty($user_prenom) || empty($mail) || empty($genre) || empty($pays) || empty($problem) || empty($mess))
+      {
+        echo '<script type="text/javascript">alert("Erreur: veuillez compléter tous les champs")</script>';
+      }
+      ?></p>
+      <p><?php
       echo "<br/>";
       echo("Votre nom est:" . " " . $_POST["user_nom"]);
       echo "<br/>";
@@ -35,6 +49,8 @@
       echo("Message :" ." " . $_POST["message"]);
       echo "<br/>";
        ?></p>
+
+
 
     </section>
  </body>

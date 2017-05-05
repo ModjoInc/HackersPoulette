@@ -17,39 +17,35 @@
   </header>
 
     <section>
-      <h1>Données du formulaire</h1>
-      <p><?php
-      $user_nom = $_POST['user_nom'];
-      $user_prenom = $_POST['user_prenom'];
-      $mail = $_POST["user_mail"];
-      $genre = $_POST["optionGenre"];
-      $pays = $_POST["pays"];
-      $problem = $_POST["problem"];
-      $mess = $_POST["message"];
-
-      if (empty($user_nom) || empty($user_prenom) || empty($mail) || empty($genre) || empty($pays) || empty($problem) || empty($mess))
-      {
-        echo '<script type="text/javascript">alert("Erreur: veuillez compléter tous les champs")</script>';
-      }
-      ?></p>
-      <p><?php
-      echo "<br/>";
-      echo("Votre nom est:" . " " . $_POST["user_nom"]);
-      echo "<br/>";
-      echo("Votre prénom est:" ." " . $_POST["user_prenom"]);
-      echo "<br/>";
-      echo("Votre Adresse Mail est:" ." " . $_POST["user_mail"]);
-      echo "<br/>";
-      echo("Votre Sexe est:" ." " . $_POST["optionGenre"]);
-      echo "<br/>";
-      echo("Vous résidez en:" ." " . $_POST["pays"]);
-      echo "<br/>";
-      echo("Vous nous contactez pour ce problème:" ." " . $_POST["problem"]);
-      echo "<br/>";
-      echo("Message :" ." " . $_POST["message"]);
-      echo "<br/>";
-       ?></p>
-
+      <div class="well">
+        <h1>Données du formulaire</h1>
+        <p><?php
+        $user_nom = $_POST['nom'];
+        $user_prenom = $_POST['prenom'];
+        $mail = $_POST["email"];
+        $genre = $_POST["genre"];
+        $pays = $_POST["pays"];
+        $problem = $_POST["problem"];
+        $mess = $_POST["message"];
+        ?></p>
+        <p><?php
+        echo "<br/>";
+        echo("Votre nom est:" . " " . $_POST["nom"]);
+        echo "<br/>";
+        echo("Votre prénom est:" ." " . $_POST["prenom"]);
+        echo "<br/>";
+        echo("Votre Adresse Mail est:" ." " . $_POST["email"]);
+        echo "<br/>";
+        echo("Votre Sexe est:" ." " . $_POST["genre"]);
+        echo "<br/>";
+        echo("Vous résidez en:" ." " . $_POST["pays"]);
+        echo "<br/>";
+        echo("Vous nous contactez pour ce problème:" ." " . $_POST["problem"]);
+        echo "<br/>";
+        echo("Message :" ." " . $_POST["message"]);
+        echo "<br/>";
+         ?></p>
+     </div>
 
 
     </section>
